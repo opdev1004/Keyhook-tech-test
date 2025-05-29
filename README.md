@@ -2,6 +2,9 @@
 
 ## Description
 
+![postman](/mdimage/000.png)
+![postman](/mdimage/001.png)
+
 I have thought about what a property manager would need when they are scheduling availability.
 For my first attempt, I designed it to be complicated like using ISO8601 format of time scheduling and possibly using calendar/timetable like component.
 However I noticed that the property manager will be make the viewing available every week until they get their tenants or buyer.
@@ -116,4 +119,4 @@ Documentation:
 ## Postman
 
 Used postman to test api
-![postman](/mdimage/postman.png).
+![postman](/mdimage/postman.png)
