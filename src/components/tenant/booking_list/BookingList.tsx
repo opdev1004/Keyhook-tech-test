@@ -11,12 +11,9 @@ type Booking = {
   property_id: number;
 };
 
-type Props = {
-  tenantId: string;
-};
-
-const TenantBookingList = ({ tenantId }: Props) => {
+const TenantBookingList = () => {
   const [bookings, setBookings] = useState<Booking[]>([]);
+  const [tenantId, setTenantId] = useState("tenant1");
 
   const fetchBookings = () => {
     fetch(`http://localhost:4000/api/booking/tenant/${tenantId}`)
@@ -46,6 +43,25 @@ const TenantBookingList = ({ tenantId }: Props) => {
 
   return (
     <div className="mt-8">
+      <p>
+        This input is just for prototype testing purpose since there isn't login
+        or authentication system.
+        <br />
+        Data need to be stored in cookies or localStorage.
+      </p>
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
+        <label className="flex flex-col text-sm font-medium">
+          Tenant ID
+          <input
+            type="text"
+            value={tenantId}
+            onChange={(e) => setTenantId(e.target.value)}
+            className="mt-1 p-2 border rounded-md w-60"
+            placeholder="tenant1"
+          />
+        </label>
+      </div>
+
       <h2 className="text-lg font-bold mb-4">Your Bookings</h2>
       <ul className="space-y-2">
         {bookings.length === 0 && (

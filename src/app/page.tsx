@@ -14,7 +14,7 @@ export default function Home() {
           </h1>
           <p>Skipping login/register with athentication.</p>
           <div className="flex gap-4 flex-wrap justify-center sm:justify-start">
-            <Button href="/landlord">Landlord</Button>
+            <Button href="/manager">Manager</Button>
             <Button href="/tenant">Tenant</Button>
           </div>
         </main>

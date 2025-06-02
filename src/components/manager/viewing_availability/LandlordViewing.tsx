@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import AvailabilityForm from "@/components/landlord/AvailabilityForm";
-import AvailabilityList from "@/components/landlord/AvailabilityList";
-import BookingList from "@/components/landlord/BookingList";
+import AvailabilityForm from "@/components/manager/viewing_availability/AvailabilityForm";
+import AvailabilityList from "@/components/manager/viewing_availability/AvailabilityList";
+import BookingList from "@/components/manager/viewing_availability/BookingList";
 
 const LandlordViewing = () => {
   const [managerId, setManagerId] = useState("landlord1");

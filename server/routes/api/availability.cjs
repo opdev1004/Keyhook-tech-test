@@ -20,7 +20,7 @@ router.post("/", (req, res) =>
 });
 
 // To view all availabilities for test
-router.get("/", (_req, res) =>
+router.get("/", (_, res) =>
 {
   const data = db.prepare("SELECT * FROM availability").all();
 

@@ -1,12 +1,12 @@
 import Button from "@/components/Button";
 import { ReactNode } from "react";
-import Sidebar from "@/components/tenant/Sidebar";
+import Sidebar from "@/components/manager/Sidebar";
 
 export const metadata = {
-  title: "Keyhook Tenant Page",
+  title: "Keyhook Landlord Pages",
 };
 
-export default function TenantLayout({ children }: { children: ReactNode }) {
+export default function LandlordLayout({ children }: { children: ReactNode }) {
   return (
     <div className="w-[100dvw] h-[100dvh] bg-white flex">
       <Sidebar />

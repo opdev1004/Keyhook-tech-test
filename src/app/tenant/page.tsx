@@ -1,4 +1,4 @@
-import TenantBooking from "@/components/tenant/TenantBooking";
+import TenantBooking from "@/components/tenant/book_viewing/TenantBooking";
 
 export const metadata = {
   title: "Keyhook Tenant Booking Page",

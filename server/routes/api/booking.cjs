@@ -42,7 +42,7 @@ router.delete("/:id", (req, res) =>
   res.send({ success: true });
 });
 
-// For landlord to see who booked for viewing
+// For property manager to see who booked for viewing
 router.get("/property/:propertyId", (req, res) =>
 {
   const { propertyId } = req.params;
@@ -66,6 +66,7 @@ router.get("/property/:propertyId", (req, res) =>
   res.json(data);
 });
 
+// For tenant to view his booking
 router.get("/tenant/:tenantId", (req, res) =>
 {
   const { tenantId } = req.params;
